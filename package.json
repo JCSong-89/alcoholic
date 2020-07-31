@@ -1,0 +1,29 @@
+{
+  "name": "alcoholic",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/JCSong-89/alcoholic.git",
+  "author": "JCSong-89 <63644722+JCSong-89@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js --delay 2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
