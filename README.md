@@ -10,7 +10,7 @@
   > Node.js  
   > TypeScript  
   > MongoDB cloud  
-  > Express
+  > Express  
   > spdy(HTTP2 + HTTPS)  
 
 ### 파일 아키텍처  
@@ -29,7 +29,7 @@ https://velog.io/@cada/자바스크립트-코딩-및-네이밍-컨벤션-1편
     
 ## 진행상황 [o]: 완료, [x]: 미완료. [▲]: 진행중 
 [o] 초기 세팅  
-[▲] 서버 구축 및 실행  
+[o] 서버 구축 및 실행  
 [x] Mongo DB 모델링  
 [x] 회원가입 API  
 [x] 회원탈퇴 API  
@@ -39,5 +39,6 @@ https://velog.io/@cada/자바스크립트-코딩-및-네이밍-컨벤션-1편
 [x] 관리자 페이지 아이템 수정 API  
 [x] 회원 로그인 API  
 [x] 아이템 검색 API  
-[x] 아이템 상세 조회 API
+[x] 아이템 상세 조회 API  
+[x] 자바스크립트 리팩토링
 
