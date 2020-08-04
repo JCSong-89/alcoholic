@@ -5,7 +5,7 @@ export default async (db: string) => {
     mongoose
       .connect(db, { useNewUrlParser: true })
       .then(() => {
-        return console.log(`Successfully connected to ${db}`);
+        return console.log('Successfully connected');
       })
       .catch(error => {
         console.log("Error connecting to database: ", error);
