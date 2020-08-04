@@ -10,7 +10,8 @@
   > Node.js  
   > TypeScript  
   > MongoDB cloud  
-  > Express  
+  > Express
+  > spdy(HTTP2 + HTTPS)  
 
 ### 파일 아키텍처  
 3tir 아키텍쳐를 기반으로 만들었고, loaders, config, types 폴더를 추가로 만들었습니다.  
