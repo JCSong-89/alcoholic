@@ -10,6 +10,8 @@
   > Node.js  
   > TypeScript  
   > MongoDB cloud  
+  > AWS RDS
+  > AWS 3S
   > Express  
   > spdy(HTTP2 + HTTPS)  
 ### 프론트엔드 깃헙주소  
@@ -32,7 +34,8 @@ https://velog.io/@cada/자바스크립트-코딩-및-네이밍-컨벤션-1편
 ## 진행상황 [o]: 완료, [x]: 미완료. [▲]: 진행중 
 [o] 초기 세팅  
 [o] 서버 구축 및 실행  
-[x] Mongo DB 모델링  
+[o] Mongo DB 모델링  
+[x] MySQL DB 모델링 및 AWS 셋팅
 [x] 회원가입 API  
 [x] 회원탈퇴 API  
 [x] 관리자 페이지 로그인 API  
