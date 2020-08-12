@@ -1,7 +1,13 @@
 import * as spdy from 'spdy';
-import { connect, app, httpsOptions } from './loaders/index';
-import config from './config/index';
-connect(config.databaseURL);
+import { connect, app, httpsOptions, mysql } from './types/loaders/index';
+import { PORT, mongodbUrl, DB_ENV } from './types/config/index';
+connect(mongodbUrl);
+mysql(DB_ENV)
+    .authenticate()
+    .then(() => console.log("connected to db"))
+    .catch(() => {
+    throw "error";
+});
 const handlerServer = (port, err) => {
     if (err) {
         console.error(err);
@@ -12,5 +18,5 @@ const handlerServer = (port, err) => {
     }
 };
 spdy.createServer(httpsOptions, app)
-    .listen(config.port, handlerServer(config.port));
+    .listen(PORT, handlerServer(PORT));
 //# sourceMappingURL=server.js.map

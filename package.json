@@ -9,8 +9,10 @@
     "@babel/core": "^7.11.0",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
+    "@types/bluebird": "^3.5.32",
     "@types/mongoose": "^5.7.34",
     "@types/spdy": "^3.4.4",
+    "@types/validator": "^13.1.0",
     "body-parser": "^1.19.0",
     "chance": "^1.1.6",
     "cors": "^2.8.5",
@@ -22,8 +24,13 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.27",
     "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
     "node-spdy": "^0.0.1-security",
     "ramda": "^0.27.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0",
+    "sequelize-typescript": "^1.1.0",
     "spdy": "^4.0.2",
     "tsc": "^1.20150623.0"
   },
@@ -37,7 +44,7 @@
   },
   "scripts": {
     "dev": "ts-node",
-    "build": "tsc && src",
+    "build": "tsc",
     "start": "nodemon --exec babel-node src/server.js --delay 2"
   }
 }
