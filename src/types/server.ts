@@ -1,16 +1,17 @@
 import * as spdy from 'spdy';
-import {connect ,app, httpsOptions, mysql} from './loaders/index';
-import {PORT, mongodbUrl, DB_ENV} from './config/index';
+import {connect ,app, httpsOptions, sequelize} from './loaders/index';
+import {PORT, mongodbUrl} from './config/index';
 
-connect(mongodbUrl);
-mysql(DB_ENV)
+sequelize
 .authenticate()
   .then(() => console.log("connected to db"))
   .catch(() => {
       throw "error";
   });
 
-const handlerServer = (port, err?) => {
+connect(mongodbUrl);
+
+const handlerServer = (port: any, err?: any) => {
   if (err) {
     console.error(err)
     return process.exit(1)
