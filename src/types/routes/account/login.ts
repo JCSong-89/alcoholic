@@ -3,6 +3,6 @@ import loginAccount from '../../services/account/login'
 
 const router = Router();
 
-router.post('/login', loginAccount);
+router.post('/', loginAccount);
 
 export default router;

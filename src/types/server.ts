@@ -15,9 +15,8 @@ const handlerServer = (port: any, err?: any) => {
   if (err) {
     console.error(err)
     return process.exit(1)
-  } else {
-    console.log('Listening on port: ' + port + '.')
-  }
+  } 
+  console.log('Listening on port: ' + port + '.')  
 }
 
 spdy.createServer(httpsOptions, app)

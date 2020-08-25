@@ -13,3 +13,5 @@ export const DB_ENV = {
   DB_PORT: <any>process.env.DB_PORT,
   DB_HOST: <string>process.env.DB_HOST
 }
+
+export const SECRET_KEY = process.env.JWT_SECRET_KEY
